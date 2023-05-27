@@ -194,24 +194,30 @@ const App = () => {
   }, [volume, sounds]);
 
   return (
-    <div id="drum-machine">
-      <div className="wrapper">
-        <Keyboard
-          sounds={sounds}
-          play={play}
-          power={power}
-          deactivateAudio={deactivateAudio}
-        />
-        <Controle
-          stop={stop}
-          power={power}
-          volume={volume}
-          name={soundName || soundsName[soundType]}
-          changeSoundGroup={changeSoundGroup}
-          handleVolumeChange={handleVolumeChange}
-        />
+    <>
+      <div id="drum-machine">
+        <div className="wrapper">
+          <Keyboard
+            sounds={sounds}
+            play={play}
+            power={power}
+            deactivateAudio={deactivateAudio}
+          />
+          <span className="bar"></span>
+          <Controle
+            stop={stop}
+            power={power}
+            volume={volume}
+            name={soundName || soundsName[soundType]}
+            changeSoundGroup={changeSoundGroup}
+            handleVolumeChange={handleVolumeChange}
+          />
+        </div>
+        <div className="attribute">
+          <h4>by Coderloff</h4>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -17,6 +17,7 @@ const Controle = ({ stop, name, power, volume, handleVolumeChange, changeSoundGr
       step='0.01'
       type="range"
       value={volume}
+      className="slider"
       onChange={handleVolumeChange}
       />
     <h2 id="display" >{name}</h2>
