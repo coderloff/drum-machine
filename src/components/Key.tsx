@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
 interface Props {
-  play: (key:string, id:string)=>void;
-  deactivateAudio: (audio:any)=>void;
+  play: (key: string, id: string) => void;
+  deactivateAudio: (audio: any) => void;
   sound: { id: string; key: string; url: string; keyCode: string };
 }
 
