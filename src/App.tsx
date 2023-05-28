@@ -137,14 +137,14 @@ const App = () => {
   const [sounds, setSounds] = useState(soundsGroup[soundType]);
 
   const styleActiveKey = (key: any) => {
-    key.parentElement.style.backgroundColor = "#000000";
+    key.parentElement.style.backgroundColor = "#060606";
     key.parentElement.style.color = "#ffffff";
   };
 
   const deactivateAudio = (audio: any) => {
     setTimeout(() => {
       audio.parentElement.style.backgroundColor = "#ffffff";
-      audio.parentElement.style.color = "#000000";
+      audio.parentElement.style.color = "#060606";
     }, 300);
   };
 
